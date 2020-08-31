@@ -9,6 +9,8 @@ WORKDIR /home/node/app
 
 COPY . .
 
+RUN npm install -g @nestjs/cli
+
 RUN npm install --only=prod
 
 RUN npm run build
