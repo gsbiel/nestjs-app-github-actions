@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  my.nestjs.app:
+    container_name: my.nestjs.app
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    ports:
+      - '3000:3000'
+    
+    
